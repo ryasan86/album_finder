@@ -56,7 +56,7 @@ const styles = {
   },
   imgStyle: {
     height: 300,
-    'width': null,
+    width: null,
     flex: 1
   }
 };
