@@ -14,14 +14,14 @@ class AlbumList extends Component {
     });
   }
 
+  renderAlbums() {
+    return this.state.albums.map((album, i) => {
+      return <AlbumDetail key={i} album={album} />;
+    });
+  }
+
   render() {
-    return (
-      <ScrollView>
-        {this.state.albums.map((album, i) => {
-          return <AlbumDetail key={i} album={album} />;
-        })}
-      </ScrollView>
-    );
+    return <ScrollView>{this.renderAlbums()}</ScrollView>;
   }
 }
 
